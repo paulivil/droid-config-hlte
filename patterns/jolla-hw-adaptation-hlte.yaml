@@ -75,5 +75,8 @@ Requires:
 # For devices where test_gps eventually gets a fix:
 #- geoclue-provider-hybris-community
 
+# straggler files
+- droid-hal-hlte-detritus
+
 Summary: Jolla HW Adaptation hlte
 
