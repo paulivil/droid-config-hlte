@@ -27,6 +27,7 @@
 /usr/sbin/adbd-functionfs.sh
 /usr/lib/tmpfiles.d/droid-hal.conf
 /var/lib/environment/nemo/60-hlte-vibra.conf
+/var/lib/environment/nemo/60-multimedia.conf
 /var/lib/environment/compositor/droid-hal-device.conf
 /etc/xdg/gstomx.conf
 /etc/hw-release

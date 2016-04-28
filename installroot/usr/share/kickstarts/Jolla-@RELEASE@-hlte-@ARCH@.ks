@@ -3,8 +3,8 @@
 # SuggestedImageType: fs
 # SuggestedArchitecture: armv7hl
 
-keyboard us
 lang en_US.UTF-8
+keyboard us
 user --name nemo --groups audio,video --password nemo
 timezone --utc UTC
 
