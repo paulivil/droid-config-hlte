@@ -38,6 +38,7 @@
 /usr/share/ngfd/plugins.d/ngf-vibra-hlte.ini
 /usr/share/sailfish-version/packagelist.d/droid-hal-version-hlte
 /usr/lib/qt5/plugins/feedback/qtfeedback-hlte.ini
+/usr/include/khr/khrplatform.h
 /usr/include/droidmedia/private.h
 /usr/include/droidmedia/droidmediaconvert.h
 /usr/include/droidmedia/droidmediacodec.h
@@ -46,3 +47,6 @@
 /usr/include/droidmedia/droidmediabuffer.h
 /usr/include/droidmedia/droidmedia.h
 /usr/include/droidmedia/droidmediaconstants.h
+/usr/include/egl/egl.h
+/usr/include/egl/eglplatform.h
+/usr/include/egl/eglext.h
