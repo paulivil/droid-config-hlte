@@ -6,9 +6,9 @@
 
 %define dcd_path ./
 
-%define pixel_ratio 2.0
+%define pixel_ratio 1.75
 
-#define have_modem 0
+%remove_modem 1
 
 
 %include droid-configs-device/droid-configs.inc
