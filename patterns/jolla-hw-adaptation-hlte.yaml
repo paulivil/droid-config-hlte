@@ -23,14 +23,19 @@ Requires:
 # Sensors
 - hybris-libsensorfw-qt5
 
-# Vibra
+# Haptics
 - ngfd-plugin-droid-vibrator
-- qt5-feedback-haptics-droid-vibrator
+- qt5-feedback-haptics-ffmemless
+- ngfd-plugin-pulse
+- pulseaudio-policy-enforcement
 
 # Needed for /dev/touchscreen symlink
 - qt5-plugin-generic-evdev
 
+
+
 - pulseaudio-modules-droid
+- pulseaudio-modules-droid-glue
 # for audio recording to work:
 - qt5-qtmultimedia-plugin-mediaservice-gstmediacapture
 
@@ -44,12 +49,15 @@ Requires:
 - gstreamer1.0-plugins-good
 - gstreamer1.0-plugins-base
 - gstreamer1.0-plugins-bad
-- nemo-gstreamer1.0-interfaces
+- gstreamer1.0-droid
 # For devices with droidmedia and gst-droid built, see HADK pdf for more information
-#- gstreamer1.0-droid
+- gstreamer1.0-droid
 
 # This is needed for notification LEDs
 - mce-plugin-libhybris
+
+# Mount SD-Card
+- sd-utils
 
 ## USB mode controller
 # Enables mode selector upon plugging USB cable:
@@ -67,6 +75,8 @@ Requires:
 
 # hammerhead, grouper, and maguro use this in scripts, so include for all
 - rfkill
+- broadcom-bluetooth
+- bluetooth-rfkill-event
 
 # enable device lock and allow to select untrusted software
 - jolla-devicelock-plugin-encsfa
@@ -75,8 +85,16 @@ Requires:
 - geoclue-provider-hybris
 
 # For FM radio on some QCOM devices
-#- qt5-qtmultimedia-plugin-mediaservice-irisradio
-#- jolla-mediaplayer-radio
+- qt5-qtmultimedia-plugin-mediaservice-irisradio
+- jolla-mediaplayer-radio
+
+# sfdroid support
+# - sfdroid_renderer
+# hlte specific
+- buttonjackd
+- nano
+- usbstick-utils
+
 
 Summary: Jolla HW Adaptation hlte
 

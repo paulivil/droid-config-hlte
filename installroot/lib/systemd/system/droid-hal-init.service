@@ -2,7 +2,7 @@
 Description=droid-hal-init
 Wants=systemd-udev-settle.service
 After=local-fs.target systemd-udev-settle.service systemd-tmpfiles-setup.service
-Before=basic.target network.target bluetooth.service ofono.service sensord.service
+Before=basic.target network.target bluetooth.service ofono.service sensorfwd.service
 DefaultDependencies=no
 Conflicts=shutdown.target
 # Lets not do Requires= here as that means that this service will restart which leads automatically
@@ -13,7 +13,7 @@ Conflicts=shutdown.target
 Type=notify
 NotifyAccess=all
 ExecStart=/bin/sh /usr/bin/droid/droid-hal-startup.sh
-ExecStop=/usr/bin/droid/kill-cgroup.sh %c
+ExecStop=/usr/bin/droid/droid-hal-shutdown.sh %c
 Restart=always
 # Lets make sure we don't block minutes in case of errors.
 TimeoutSec=15

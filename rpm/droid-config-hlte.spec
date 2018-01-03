@@ -6,9 +6,14 @@
 
 %define dcd_path ./
 
-%define pixel_ratio 1.75
+%define pixel_ratio 1.8
 
-%remove_modem 1
+%define remove_modem 1
 
 
 %include droid-configs-device/droid-configs.inc
+
+%pre
+if [ "$1" = "2" ]; then
+  rm /etc/acdbdata/ -r
+fi

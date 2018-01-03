@@ -8,6 +8,7 @@
   <rpm:requires>
     <rpm:entry name="jolla-developer-mode"/>
     <rpm:entry name="sailfishsilica-qt5-demos"/>
+    <rpm:entry name="libhybris-tests"/>
     <rpm:entry name="busybox-static"/>
     <rpm:entry name="net-tools"/>
     <rpm:entry name="openssh-clients"/>

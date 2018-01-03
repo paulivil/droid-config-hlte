@@ -1,12 +1,14 @@
 # DisplayName: Jolla hlte/@ARCH@ (release) 1
 # KickstartType: release
+# DeviceModel: hlte
+# DeviceVariant: hlte
 # SuggestedImageType: fs
 # SuggestedArchitecture: armv7hl
 
-user --name nemo --groups audio,video --password nemo
-timezone --utc UTC
 keyboard us
 lang en_US.UTF-8
+user --name nemo --groups audio,input,video --password nemo
+timezone --utc UTC
 
 ### Commands from /tmp/sandbox/usr/share/ssu/kickstart/part/default
 part / --size 500 --ondisk sda --fstype=ext4

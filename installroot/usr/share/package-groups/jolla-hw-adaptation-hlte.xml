@@ -6,9 +6,6 @@
   <uservisible/>
   <category lang="en">Base Group</category>
   <rpm:requires>
-    <rpm:entry name="pattern:jolla-hw-adaptation-hybris"/>
-    <rpm:entry name="pattern:jolla-hw-adaptation-hybris-droid-vibrator"/>
-    <rpm:entry name="pattern:jolla-ui-configuration-hlte"/>
     <rpm:entry name="droid-hal-hlte"/>
     <rpm:entry name="droid-hal-hlte-img-boot"/>
     <rpm:entry name="droid-hal-hlte-kernel-modules"/>
@@ -16,8 +13,20 @@
     <rpm:entry name="droid-config-hlte-pulseaudio-settings"/>
     <rpm:entry name="droid-config-hlte-policy-settings"/>
     <rpm:entry name="droid-config-hlte-preinit-plugin"/>
+    <rpm:entry name="droid-config-hlte-flashing"/>
+    <rpm:entry name="droid-config-hlte-bluez4"/>
     <rpm:entry name="droid-hal-version-hlte"/>
+    <rpm:entry name="libhybris-libEGL"/>
+    <rpm:entry name="libhybris-libGLESv2"/>
+    <rpm:entry name="libhybris-libwayland-egl"/>
+    <rpm:entry name="hybris-libsensorfw-qt5"/>
+    <rpm:entry name="ngfd-plugin-droid-vibrator"/>
+    <rpm:entry name="qt5-feedback-haptics-ffmemless"/>
+    <rpm:entry name="ngfd-plugin-pulse"/>
+    <rpm:entry name="pulseaudio-policy-enforcement"/>
+    <rpm:entry name="qt5-plugin-generic-evdev"/>
     <rpm:entry name="pulseaudio-modules-droid"/>
+    <rpm:entry name="pulseaudio-modules-droid-glue"/>
     <rpm:entry name="qt5-qtmultimedia-plugin-mediaservice-gstmediacapture"/>
     <rpm:entry name="qt5-qtwayland-wayland_egl"/>
     <rpm:entry name="qt5-qpa-hwcomposer-plugin"/>
@@ -26,19 +35,23 @@
     <rpm:entry name="gstreamer1.0-plugins-good"/>
     <rpm:entry name="gstreamer1.0-plugins-base"/>
     <rpm:entry name="gstreamer1.0-plugins-bad"/>
-    <rpm:entry name="nemo-gstreamer1.0-interfaces"/>
+    <rpm:entry name="gstreamer1.0-droid"/>
+    <rpm:entry name="gstreamer1.0-droid"/>
     <rpm:entry name="mce-plugin-libhybris"/>
+    <rpm:entry name="sd-utils"/>
     <rpm:entry name="usb-moded"/>
     <rpm:entry name="usb-moded-defaults-android"/>
     <rpm:entry name="usb-moded-developer-mode-android"/>
-    <rpm:entry name="usb-moded-pc-suite-mode-android"/>
-    <rpm:entry name="usb-moded-mass-storage-android-config"/>
     <rpm:entry name="usb-moded-connection-sharing-android-config"/>
-    <rpm:entry name="usb-moded-diag-mode-android"/>
-    <rpm:entry name="bluez-configs-sailfish"/>
     <rpm:entry name="rfkill"/>
+    <rpm:entry name="broadcom-bluetooth"/>
+    <rpm:entry name="bluetooth-rfkill-event"/>
     <rpm:entry name="jolla-devicelock-plugin-encsfa"/>
-    <rpm:entry name="jolla-settings-layout"/>
-    <rpm:entry name="droid-hal-hlte-detritus"/>
+    <rpm:entry name="geoclue-provider-hybris"/>
+    <rpm:entry name="qt5-qtmultimedia-plugin-mediaservice-irisradio"/>
+    <rpm:entry name="jolla-mediaplayer-radio"/>
+    <rpm:entry name="buttonjackd"/>
+    <rpm:entry name="nano"/>
+    <rpm:entry name="usbstick-utils"/>
   </rpm:requires>
 </pattern>

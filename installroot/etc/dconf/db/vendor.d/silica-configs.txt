@@ -1,3 +1,4 @@
 [desktop/sailfish/silica]
-theme_pixel_ratio=@PIXEL_RATIO@
-theme_icon_subdir='z@ICON_RES@'
+theme_pixel_ratio=1.8
+theme_icon_subdir='z1.75'
+
